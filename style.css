@@ -34,6 +34,10 @@ body {
   transition: color 0.3s;
   color:brown;
 }
+#navbar  ul li a:hover{
+    color: white;
+  
+}
 
 #navbar
 #navbar.scrolled {
@@ -320,6 +324,7 @@ body.light-mode {
 }
 body.light-mode a { color: whitesmoke; }
 body.light-mode #navbar ul li a { color: whitesmoke; }
+body.light-mode #navbar ul li a:hover { color: brown; }
 body.light-mode #features .box { background: #f9f9f9; color: #222; }
 body.light-mode .accordion-body { background: #f9f9f9; color: #222; }
 body.light-mode #main_footer { border-top: 3px solid #ccc; }
@@ -329,8 +334,9 @@ body.dark-mode {
   background: #121212;
   color: #eaeaea;
 }
-body.dark-mode a { color: black; }
+body.dark-mode a { color: whitesmoke; }
 body.dark-mode #navbar ul li a { color: whitesmoke; }
+body.dark-mode #navbar ul li a:hover { color: brown; }
 body.dark-mode #features .box { background: #1e1e1e; color: #ddd; }
 body.dark-mode .accordion-body { background: #1e1e1e; color: #ddd; }
 body.dark-mode #main_footer { border-top: 3px solid #888; }
