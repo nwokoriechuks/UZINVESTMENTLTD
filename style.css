@@ -1,0 +1,336 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#navbar ul {
+  list-style: none;
+  display: flex;
+}
+#navbar ul li {
+  margin-left: 1.5rem;
+}
+#navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  color:brown;
+}
+
+#navbar
+#navbar.scrolled {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.logo a {
+  color: brown;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+/* Navbar Variants (Pattern Sync) */
+.nav-gradient {
+  background: linear-gradient(to right, brown, black);
+}
+.nav-carbon {
+  background: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'), black;
+  background-blend-mode: overlay;
+}
+.nav-wood {
+  background: url('https://www.transparenttextures.com/patterns/purty-wood.png'), brown;
+  background-blend-mode: overlay;
+}
+.nav-linen {
+  background: url('https://www.transparenttextures.com/patterns/black-linen.png'), black;
+  background-blend-mode: overlay;
+}
+.nav-asfalt {
+  background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'), black;
+  background-blend-mode: overlay;
+}
+.nav-dots {
+  background: url('https://www.transparenttextures.com/patterns/subtle-dots.png'), black;
+  background-blend-mode: overlay;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1524758631624-e2822e304c36') center/cover no-repeat;
+  color: white;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  background: brown;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: black;
+}
+
+/* Features Section */
+#features {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 1rem;
+}
+#features .box {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 0 1rem;
+  transition: transform 0.3s, background 0.3s;
+}
+#features .box:hover {
+  transform: translateY(-10px);
+  background: #ffdfc4;
+}
+#features .box i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* About - Accordion */
+.accordion {
+  max-width: 700px;
+  margin: 2rem auto;
+}
+.accordion-header {
+  background: brown;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.accordion-header.active {
+  background: black;
+}
+.accordion-body {
+  display: none;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Testimonials */
+#testimonials {
+  text-align: center;
+  padding: 2rem;
+  background: grey;
+}
+.testimonial {
+  display: none;
+  font-style: italic;
+}
+.testimonial.active {
+  display: block;
+}
+/*sample*/
+img{
+    max-width: 100%;
+    
+}
+   
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 900px;
+    margin: auto;
+    gap: 5px;
+
+}
+
+.sample{
+    width: 70%;
+}
+/* Contact Form */
+#contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#contact-form button {
+  background: brown;
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#contact-form button:hover {
+  background: black;
+}
+
+/* Footer */
+#main_footer {
+  background: linear-gradient(to right, brown, black);
+  color:black;
+  padding: 2rem 1rem 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer-left, .footer-center, .footer-right {
+  margin: 1rem;
+}
+.footer-center ul {
+  list-style: none;
+}
+.footer-center ul li {
+  margin: 5px 0;
+}
+.footer-center ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-right a {
+  color:black;
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+}
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Footer Patterns */
+.pattern-asfalt {
+  background: linear-gradient(to right, brown, black),
+              url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  background-blend-mode: overlay;
+}
+.pattern-linen {
+  background: linear-gradient(to right, brown, black),
+              url('https://www.transparenttextures.com/patterns/black-linen.png');
+  background-blend-mode: overlay;
+}
+.pattern-wood {
+  background: linear-gradient(to right, brown, black),
+              url('https://www.transparenttextures.com/patterns/purty-wood.png');
+  background-blend-mode: overlay;
+}
+.pattern-carbon {
+  background: linear-gradient(to right, brown, black),
+              url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+  background-blend-mode: overlay;
+}
+.pattern-dots {
+  background: linear-gradient(to right, brown, black),
+              url('https://www.transparenttextures.com/patterns/subtle-dots.png');
+  background-blend-mode: overlay;
+}
+
+/* Switcher UI */
+.footer-switcher, .theme-switcher {
+  margin: 1rem 0;
+  text-align: center;
+}
+.footer-switcher label, .theme-switcher label {
+  font-weight: bold;
+  margin-right: .5rem;
+  color:black;
+}
+.footer-switcher select, .theme-switcher select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  font: inherit;
+}
+
+/* Back to Top */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 100;
+  background: brown;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#backToTop:hover {
+  background: black;
+}
+
+/* Light Mode */
+body.light-mode {
+  background: #ffffff;
+  color: #222;
+}
+body.light-mode a { color: whitesmoke; }
+body.light-mode #navbar ul li a { color: whitesmoke; }
+body.light-mode #features .box { background: #f9f9f9; color: #222; }
+body.light-mode .accordion-body { background: #f9f9f9; color: #222; }
+body.light-mode #main_footer { border-top: 3px solid #ccc; }
+
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #eaeaea;
+}
+body.dark-mode a { color: black; }
+body.dark-mode #navbar ul li a { color: whitesmoke; }
+body.dark-mode #features .box { background: #1e1e1e; color: #ddd; }
+body.dark-mode .accordion-body { background: #1e1e1e; color: #ddd; }
+body.dark-mode #main_footer { border-top: 3px solid #888; }
