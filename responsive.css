@@ -44,7 +44,7 @@
 
 .menu-toggle.active::after{
   content:"X";
-  font-size:1.5rem;
+  font-size:0.8rem;
   color:white;
   position:absolute;
 }
@@ -146,7 +146,7 @@
 }
 body.light-mode {
   background: #ffffff;
-  color: #222;
+  color: white;
 }
 body.light-mode a { color: whitesmoke; }
 body.light-mode #navbar ul li a { color: whitesmoke; }
