@@ -3,6 +3,17 @@ window.addEventListener("scroll", function () {
   document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 50);
 });
 
+//M0bile navbar toggle  
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if(menuToggle){
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+  });
+}
+
 // Back to top button
 const topBtn = document.getElementById("backToTop");
 if (topBtn) {

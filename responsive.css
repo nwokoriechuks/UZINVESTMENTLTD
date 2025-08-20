@@ -6,23 +6,56 @@
 
 /* Mobile screens */
 @media (max-width: 768px) {
+
+  span{
+    color:brown
+  }
   /* Navbar stacked */
   #navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
   }
-  #navbar ul {
+  #navMenu{
+    max-height:0;
+    overflow:hidden;
+    display:none;
     flex-direction: column;
     width: 100%;
+    background:black;
+    position:absolute;
+    top:60px;
+    left:0;
+    padding:1rem;
+    transition:max-height 0.4s ease-out;
   }
   #navbar ul li {
-    margin: 0.5rem 0;
+    margin: 0.8rem 0;
+    text-align:center;
   }
 
   #navbar ul li a:hover{ 
     color:white;
 }
+.menu-toggle{
+  display:block;
 
+}
+
+.menu-toggle.active::after{
+  content:"X";
+  font-size:1.5rem;
+  color:white;
+  position:absolute;
+}
+.menu-toggle.active{
+  color:transparent;
+}
+#navMenu.active{
+  max-height:300px;
+  padding:1rem;
+  margin:0px 0px 5px 0px
+}
   .hero {
     height: 60vh;
     padding: 0 1rem;
